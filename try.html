@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="icon" href="/src/svg/pokeball-pokemon-svgrepo-com.svg" />
+    <title>Pokémon OTG | PokéShop</title>
+
+    <style>
+      .custom-shadow {
+        text-shadow: 5px 5px 12px #31313150;
+      }
+      .custom-type {
+        text-shadow: 1px 1px 1px  #dfd4d4d7;
+      }
+      .custom-all {
+        text-shadow: 1px 1px 1px #88808050;
+      }
+      html {
+            scroll-behavior: smooth;
+      }
+      .card-shadow {
+        box-shadow: 5px 5px 12px #31313150;
+      }
+      .custom-overlay {
+        background: rgba(86, 86, 86, 0.849);
+      }
+      #overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+      }
+      #overlay:hover {
+        opacity: 1;
+        transition: opacity 0.25s;
+      }
+      #overlay:hover > * {
+        transform: translateY(0);
+      }
+      #line {
+        border-left: 3px solid rgba(53, 53, 53, 0.2);
+        height: 18in;
+      }
+    </style>
+  </head>
+  
+      <nav class="flex items-center text-center font-righteous justify-between p-6 tracking-widest text-xl" id="section1">
+        <p>POKÉMON ON THE GO</p>
+      <div class="bg-white-200">
+          <div class="flex items-center text-center font-righteous justify-between0 gap-32 text-lg">
+            <ul class="rounded-lg bg-custom-mustard text-white capitalize w-40 ring-2 ring-yellow-600 hover:bg-yellow-600"><a href="#section2">COLLECTION</a></ul>
+            <ul class="rounded-lg bg-custom-green text-white capitalize w-48 ring-2 ring-green-800 hover:bg-green-800"><a href="#">HOW TO ORDER?</a></ul>
+            <ul class="rounded-lg bg-custom-blue text-white capitalize w-32 ring-2 ring-indigo-900 hover:bg-indigo-900"><a href="#">REVIEWS</a></ul>
+          </div>
+        </div>
+      <button class="">
+        <svg width="40" height="40" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.5833 27.4167H73.5941C74.6885 27.4167 75.7707 27.6461 76.771 28.09C77.7714 28.5339 78.6676 29.1825 79.4019 29.9939C80.1362 30.8054 80.6924 31.7617 81.0345 32.8012C81.3766 33.8408 81.4971 34.9405 81.3882 36.0294L79.0382 59.5294C78.845 61.4623 77.9404 63.2545 76.5001 64.558C75.0598 65.8614 73.1866 66.5833 71.2441 66.5834H33.8399C32.0284 66.5841 30.2725 65.9569 28.8714 64.8086C27.4703 63.6602 26.5105 62.0618 26.1554 60.2854L19.5833 27.4167Z"
+            stroke="black" stroke-width="4" stroke-linejoin="round" />
+          <path
+            d="M19.5832 27.4167L16.4108 14.7149C16.1986 13.868 15.7095 13.1162 15.0211 12.579C14.3328 12.0418 13.4847 11.75 12.6116 11.75H7.83325"
+            stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M31.3333 82.25H39.1666" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M62.6665 82.25H70.4998" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      </nav>
+
+      <body class="bg-scroll-landing bg-auto bg-top">
+        <div>
+          <div class="flex flex-col justify-center text-center items-center font-righteous gap-10 p-44">
+            <div class="flex text-9xl tracking-widest">
+              <ul class="custom-shadow text-custom-green">W</ul>
+              <ul class="custom-shadow text-custom-red">E</ul>
+              <ul class="custom-shadow text-custom-mustard">L</ul>
+              <ul class="custom-shadow text-custom-blue">C</ul>
+              <ul class="custom-shadow text-custom-green">O</ul>
+              <ul class="custom-shadow text-custom-red">M</ul>
+              <ul class="custom-shadow text-custom-mustard">E</ul>
+              <ul class="custom-shadow text-custom-blue">!</ul> 
+            </div>
+              <p class="custom-shadow text-custom-black text-3xl tracking-widest">Gotta catch 'em all!</p>
+              <div>
+                <input type="text" name="search" placeholder="Search your pokemon" autocomplete="off" class="px-24 py-2 ring-2 rounded-2xl">
+              </div>
+          </div>
+        </div>    
+
+        <div class="bg-custom-beige container mx-auto" id="section2">
+          <div class="mx-10">
+            <h1 class="text-white custom-shadow font-righteous tracking-widest pt-12 text-5xl flex justify-center text-center">CHOOSE YOUR POKEMON</h1>
+            <div class="flex mt-14 gap-10">
+                <div class="flex flex-col font-righteous tracking-widest text-3xl gap-14">
+                    <h2><button id="btn-types" value="type" class="custom-all text-gray-700 hover:text-custom-black focus:text-custom-black">ALL TYPES</button></h2> 
+                    <h2><button id="btn-types" value="bug" class="custom-type text-custom-red hover:text-red-900 focus:text-red-900">BUG</button></h2>
+                    <h2><button id="btn-types" value="dark" class="custom-type text-custom-green hover:text-green-900 focus:text-green-900">DARK</button></h2>
+                    <h2><button id="btn-types" value="dragon" class="custom-type text-custom-blue hover:text-blue-900 focus:text-blue-900">DRAGON</button></h2>
+                    <h2><button id="btn-types" value="electric" class="custom-type text-custom-mustard hover:text-yellow-900 focus:text-yellow-900">ELECTRIC</button></h2>
+                    <h2><button id="btn-types" value="fairy" class="custom-type text-custom-red hover:text-red-900 focus:text-red-900">FAIRY</button></h2>
+                    <h2><button id="btn-types" value="fighting" class="custom-type text-custom-green hover:text-green-900 focus:text-green-900">FIGHTING</button></h2>
+                    <h2><button id="btn-types" value="fire" class="custom-type text-custom-blue hover:text-blue-900 focus:text-blue-900">FIRE</button></h2>
+                    <h2><button id="btn-types" value="flying" class="custom-type text-custom-mustard hover:text-yellow-900 focus:text-yellow-900">FLYING</button></h2>
+                    <h2><button id="btn-types" value="ghost" class="custom-type text-custom-red hover:text-red-900 focus:text-red-900">GHOST</button></h2>
+                    <h2><button id="btn-types" value="grass" class="custom-type text-custom-green hover:text-green-900 focus:text-green-900">GRASS</button></h2>
+                    <h2><button id="btn-types" value="ground" class="custom-type text-custom-blue hover:text-blue-900 focus:text-blue-900">GROUND</button></h2>
+                    <h2><button id="btn-types" value="ice" class="custom-type text-custom-mustard hover:text-yellow-900 focus:text-yellow-900">ICE</button></h2>
+                    <h2><button id="btn-types" value="normal" class="custom-type text-custom-red hover:text-red-900 focus:text-red-900">NORMAL</button></h2>
+                    <h2><button id="btn-types" value="poison" class="custom-type text-custom-green hover:text-green-900 focus:text-green-900">POISON</button></h2>
+                    <h2><button id="btn-types" value="pyschic" class="custom-type text-custom-blue hover:text-blue-900 focus:text-blue-900">PSYCHIC</button></h2>
+                    <h2><button id="btn-types" value="rock" class="custom-type text-custom-mustard hover:text-yellow-900 focus:text-yellow-900">ROCK</button></h2>
+                    <h2><button id="btn-types" value="steel" class="custom-type text-custom-red hover:text-red-900 focus:text-red-900">STEEL</button></h2>
+                    <h2><button id="btn-types" value="water" class="custom-type text-custom-green hover:text-green-900 focus:text-green-900">WATER</button></h2>
+                </div>
+                <div id="line"></div>
+                <div class="flex-1">
+                    <ol id="pokedex" class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3"></ol>
+                </div>
+            </div>
+        </div> 
+        <script src="index.js"></script>
+      </body>
+</html>
+

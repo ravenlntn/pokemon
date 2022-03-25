@@ -1,0 +1,15 @@
+{
+  "name": "boardgame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
